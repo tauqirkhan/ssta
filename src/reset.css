@@ -90,13 +90,25 @@ video {
 }
 
 :root {
-  --background-color: #ffffff;
-  --foreground-color: #6b4c7b;
-  --text-on-bg: #933e3e;
-  --text-on-fg: #ffffff;
+  --primary-color: #004225;
+  --secondary-color: #f0f0f0;
+  --accent-color: #c9b037;
+  --primary-text-color: #ffffff;
+  --non-primary-text-color: #1c1c1c;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
 }

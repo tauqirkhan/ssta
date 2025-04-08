@@ -1,0 +1,116 @@
+.header {
+  min-height: 10vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: var(--non-primary-text-color);
+}
+
+.logo {
+  font-size: 3.875em;
+}
+
+.ul {
+  display: flex;
+  gap: 75px;
+  align-items: center;
+  font-size: 1.3125em;
+}
+
+.ul li {
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.ul li:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+/* CSS-FOR-MORE Option */
+.dropdown {
+  position: relative;
+}
+
+.dropBtn {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+}
+
+.dropdownContent li {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.dropdownContent li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.arrow::before {
+  content: "►";
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .arrow::before {
+  content: "▼";
+}
+
+/* For 1024px laptop size */
+@media (max-width: 1100px) {
+  .logo {
+    font-size: 3.625em;
+  }
+
+  .ul {
+    font-size: 1.125em;
+    gap: 30px;
+  }
+
+  .dropdownContent li {
+    padding: 7px 14px;
+  }
+}
+
+/* For 768px Tablet size */
+@media (max-width: 800px) {
+  .header {
+    padding-left: 5vw;
+    padding-right: 10vw;
+  }
+
+  .logo {
+    font-size: 3.25em;
+  }
+
+  .ul {
+    font-size: 1em;
+    gap: 20px;
+  }
+
+  .dropdownContent {
+    padding: 5px 0;
+    left: -8px;
+  }
+
+  .dropdownContent li {
+    padding: 5px 10px;
+  }
+}
