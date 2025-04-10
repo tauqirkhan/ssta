@@ -46,6 +46,12 @@
 .svg {
   width: 60px;
   height: 60px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  object-fit: contain;
 }
 
 .cta {

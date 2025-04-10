@@ -8,6 +8,8 @@
   padding-left: 10vw;
   padding-right: 10vw;
   color: var(--non-primary-text-color);
+  position: sticky;
+  top: 0;
 }
 
 .logo {
